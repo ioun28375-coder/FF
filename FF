@@ -1,0 +1,7 @@
+-- ตัวอย่างการปิด Collision ของชิ้นส่วนตัวละคร
+local character = script.Parent
+for _, part in pairs(character:GetChildren()) do
+    if part:IsA("BasePart") then
+        part.CanCollide = false -- ปิดการชน ทำให้ทะลุสิ่งกีดขวางได้
+    end
+end
